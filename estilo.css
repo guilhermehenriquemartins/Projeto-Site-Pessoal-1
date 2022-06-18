@@ -1,0 +1,53 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Título-Principal';
+    src: url('fonts/Gotham-XLight.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Subtítulo-Principal';
+    src: url('fonts/GothamBold.ttf') format('truetype');
+}
+
+:root {
+    --fonteprincipal: 'Título-Principal';
+    --subfonteprincipal: 'Subtítulo-Principal';
+}
+
+body {
+    height: 97vh;
+    background-image: url('imgs/cabecalho-tarde.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+header > img {
+    margin-top: 70px;
+    margin-left: 25px;
+    width: 380px;
+}
+
+header > h1 {
+    color: white;
+    margin-top: -250px;
+    margin-left: 370px;
+    width: 400px;
+    font-size: 3em;
+    text-align: left;
+    font-family: var(--fonteprincipal);
+    background-color: rgba(0, 0, 0, 0.304);
+    padding-bottom: 20px;
+    padding-left: 40px;
+    padding-right: 57px;
+}
+
+header > h2 {
+    color: white;
+    margin-top: -15px;
+    margin-left: 400px;
+    font-size: 1.1em;
+    font-family: var(--subfonteprincipal);
+    background-color: black;
+    padding-top: 20px;
+    margin-top: -32px;
+}
